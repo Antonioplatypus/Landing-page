@@ -5,6 +5,7 @@ body {
 
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
@@ -15,11 +16,10 @@ body {
     border: 0px;
 }
 
-.header > a {
+.leftContent, .rightContent {
     display:flex;
-    flex:1;
-    align-self: flex-start;
-    padding-top: 13px;
+    align-items: center;
+    gap: 16px;
 }
 
 .uheader{
@@ -42,6 +42,7 @@ body {
     font-size: 18px;
     width: 600px;
     margin: 0px;
+    position: relative; bottom: 280px;
 }
 
 .uheader >button {
@@ -53,11 +54,12 @@ body {
     border-style: none;
     width: 150px;
     font-weight: 600;
+    position: relative; bottom: 280px;
 }
 
 .uheader >img {
     display: flex;
     width: 500px;
-    position: absolute;
-    margin-left: 800px;
+    margin-left: auto;
+    position: relative; bottom: 130px;
 }
