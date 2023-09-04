@@ -25,27 +25,37 @@ body {
 .uheader{
     flex: 1;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     background-color: #1F2937;
-    padding: 24px 100px 100px 100px; 
     color:white;
-    flex-direction: column;
+    padding: 24px 100px 100px 100px; 
+    gap: 15px;
 }
 
-.uheader >h1 {
+.uheaderSame {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.uheaderSame >h1 {
     font-size: 48px;
     font-weight: 800;
     width: 400px;
-    margin-bottom: 0px;
+    height: 80px;
 }
 
-.uheader >p {
+.uheaderSame >p {
     font-size: 18px;
     width: 600px;
     margin: 0px;
-    position: relative; bottom: 280px;
 }
 
-.uheader >button {
+.uheaderSame >button {
     background-color: #3882F6;
     color: white;
     padding: 6px 30px;
@@ -54,12 +64,6 @@ body {
     border-style: none;
     width: 150px;
     font-weight: 600;
-    position: relative; bottom: 280px;
 }
 
-.uheader >img {
-    display: flex;
-    width: 500px;
-    margin-left: auto;
-    position: relative; bottom: 130px;
-}
+.uheader >img{width:735px;}
