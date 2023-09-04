@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+img {max-width:100%;}
 
 .header {
     display: flex;
@@ -67,3 +68,30 @@ body {
 }
 
 .uheader >img{width:735px;}
+
+.information {text-align: center;}
+
+.information >h1 {padding-bottom: 25px;}
+
+.informationImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 100px;
+    text-align: center;
+}
+
+.info >img {width:220px; height:220px;}
+.info >p {width:220px; height:220px;}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    width: 1920;
+    text-align: center;
+    align-items: center;
+}
+
+.quote >h1 {font-size: 36px; font-style: italic; color: #1F2937; max-width: 850px;}
+.quote >p {font-weight: 800;padding-left: 450px;}
